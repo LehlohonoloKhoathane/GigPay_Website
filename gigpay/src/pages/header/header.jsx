@@ -8,8 +8,10 @@ function Header() {
       <nav className="nav-links">
         <Link to="/about">About</Link>
         <Link to="/products">Products</Link>
+        <Link to="/whyUs">Why Us</Link>
+        <Link to="/testimonials">Testimonials</Link>
         <Link to="/help">Help</Link>
-        <Link to="/signup" className='signup'>Sign Up</Link>
+        <Link to="/signUp" className='signup'>Sign Up</Link>
       </nav>
     </header>
   );

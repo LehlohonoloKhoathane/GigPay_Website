@@ -5,6 +5,7 @@
   background-color: #24292e;
   color: #E5E7EB;
   padding: 16px 32px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -12,14 +13,87 @@
   font-weight: bold;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .nav-links a {
   color: #E5E7EB;
-  margin-left: 20px;
-  font: bold;
-  text-decoration: none;
   font-weight: 800;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  line-height: 1;
 }
 
 .nav-links a:hover {
   text-decoration: underline;
+}
+
+/* Sign Up Button Styling */
+.signup {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #E5E7EB;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #E5E7EB;
+  background-color: transparent;
+  text-decoration: none;
+  z-index: 1;
+  transition: color 0.3s ease;
+  height: 100%;
+}
+
+.signup::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #E5E7EB;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.signup:hover::before {
+  width: 100%;
+}
+
+.signup:hover {
+  color: #24292e;
+  text-decoration: none;
+}
+
+/* ===================== */
+/* 📱 Responsive Design  */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .nav-links a,
+  .signup {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    text-align: left;
+  }
 }
