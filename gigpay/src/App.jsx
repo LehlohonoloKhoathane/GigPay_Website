@@ -1,4 +1,6 @@
 //import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom';
+
 
 import './App.css'
 import Header from './pages/header/header'
@@ -10,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
     <Header/>
-    
+
     </BrowserRouter>
   )
 }
