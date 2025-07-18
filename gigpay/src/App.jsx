@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css'
 import Header from './pages/header/header'
 import Home from './pages/home/home';
-
+import About from './pages/about/about';
 
 function App() {
   
@@ -12,6 +12,7 @@ function App() {
     <BrowserRouter>
     <Header/>
     <Home/>
+    <About/>
     </BrowserRouter>
   )
 }
