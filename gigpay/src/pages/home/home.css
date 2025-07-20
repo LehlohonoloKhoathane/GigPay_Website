@@ -2,17 +2,14 @@
 .home-container {
   background-color: #7b2cbf;
   color: white;
-  min-height: 100vh;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 80px 16px 40px; /* Top space for header */
   box-sizing: border-box;
 }
 
 .home-content {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -29,7 +26,7 @@
 
 .text-section {
   flex: 1;
-  text-align: center; /* Mobile default */
+  text-align: center;
 }
 
 @media (min-width: 768px) {

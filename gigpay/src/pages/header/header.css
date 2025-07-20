@@ -1,38 +1,48 @@
+/* ============== */
+/* Base Layout    */
+/* ============== */
+
 .site-header {
+  background-color: #7b2cbf;
+  color: #E5E7EB;
+  padding: 16px 32px;
+}
+
+.header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #24292e;
-  color: #E5E7EB;
-  padding: 16px 32px;
   flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
+
+/* ============== */
+/* Navigation     */
+/* ============== */
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 40px;
 }
 
 .nav-links a {
+  font-size: 1.5rem;
   color: #E5E7EB;
-  font-weight: 800;
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
   line-height: 1;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: rgb(71, 82, 82);
 }
 
-/* Sign Up Button Styling */
 .signup {
   position: relative;
   display: inline-flex;
@@ -70,30 +80,75 @@
   text-decoration: none;
 }
 
-/* ===================== */
-/* 📱 Responsive Design  */
-/* ===================== */
+/* Show only desktop nav on large screens */
+.desktop-nav {
+  display: flex;
+}
+
+/* Hide hamburger and mobile nav by default */
+.hamburger,
+.mobile-nav {
+  display: none;
+}
+
+/* ============== */
+/* Hamburger Icon */
+/* ============== */
+
+.hamburger {
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #E5E7EB;
+  font-size: 1.5rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #E5E7EB;
+  transition: all 0.3s ease;
+}
+
+.close-icon {
+  font-size: 1.8rem;
+  color: #E5E7EB;
+  line-height: 1;
+}
+
+/* ============== */
+/* Responsive     */
+/* ============== */
 
 @media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
+  .desktop-nav {
+    display: none;
   }
 
-  .nav-links {
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
     gap: 12px;
+    width: 100%;
     margin-top: 12px;
   }
 
-  .nav-links a,
-  .signup {
+  .mobile-nav.open {
+    display: flex;
+  }
+
+  .mobile-nav a,
+  .mobile-nav .signup {
     width: 100%;
     padding: 10px 12px;
-    box-sizing: border-box;
     text-align: left;
+    box-sizing: border-box;
   }
 }
