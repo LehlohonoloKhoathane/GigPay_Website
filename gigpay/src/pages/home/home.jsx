@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './home.css'
 import heroImage from '../../assets/gigpay.jpg'
 
@@ -16,7 +17,9 @@ const Home = () => {
             We provide the loans, savings, and accounts that help gig workers get paid,
             plan ahead, and unlock opportunity.
           </p>
-          <button className="cta-button">Open Account</button>
+          <Link to="/open-account">
+            <button className="cta-button">Open Account</button>
+          </Link>
         </div>
 
         {/* Right Image Section */}

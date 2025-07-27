@@ -1,0 +1,137 @@
+/* openAccount.css */
+
+.open-account-container {
+  background-color: #7b2cbf;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.form-wrapper h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #7b2cbf;
+}
+
+.form-wrapper p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.open-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.open-account-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.open-account-form input,
+.open-account-form select {
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.open-account-form input:focus,
+.open-account-form select:focus {
+  border-color: #7b2cbf;
+  box-shadow: 0 0 0 2px rgba(123, 44, 191, 0.2);
+}
+
+.form-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.submit-button,
+.cancel-button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+  min-width: 140px;
+}
+
+/* Submit (Create Account) Button */
+.submit-button {
+  background-color: #7b2cbf;
+  color: #fff;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #6821a8;
+}
+
+/* Cancel Button */
+.cancel-button {
+  background-color: transparent;
+  color: #7b2cbf;
+  border: 2px solid #7b2cbf;
+}
+
+.cancel-button:hover {
+  background-color: #f4f4f4;
+  color: #5f1a99;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .form-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .submit-button,
+  .cancel-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
