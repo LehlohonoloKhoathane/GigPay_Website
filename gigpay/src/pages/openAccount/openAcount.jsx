@@ -265,7 +265,7 @@ const OpenAccount = () => {
           )}
 
           <label htmlFor="proofOfAddress">
-            Proof of Address (optional)
+            Proof of Address <RequiredStar />
           </label>
           <input
             id="proofOfAddress"
