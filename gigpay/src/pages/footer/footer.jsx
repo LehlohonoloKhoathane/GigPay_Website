@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>@2025 GigPay | All rights reserved</p>
+          <p>Copyright &copy; 2025. All rights reserved | Designed & Developed by Lehlohonolo Khoathane</p>
         </div>
       </div>
     </footer>

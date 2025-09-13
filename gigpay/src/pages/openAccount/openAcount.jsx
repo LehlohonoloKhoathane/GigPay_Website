@@ -238,9 +238,9 @@ const OpenAccount = () => {
             <option value="">Select your platform</option>
             <option value="uber">Uber</option>
             <option value="bolt">Bolt</option>
+            <option value="inDrive">inDrive</option>
             <option value="mrd">Mr D</option>
             <option value="sixty60">Checkers Sixty60</option>
-            <option value="sweepsouth">SweepSouth</option>
             <option value="freelancer">Other</option>
           </select>
           {errors.selectedPlatform && <div id="err-platform" className="field-error">{errors.selectedPlatform}</div>}
